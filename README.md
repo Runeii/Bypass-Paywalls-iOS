@@ -1,5 +1,19 @@
 # Bypass-Paywalls-iOS
-iOS Port, based on the Chrome extension: https://github.com/iamadamdev/bypass-paywalls-chrome
+Bypass newspaper paywalls on iOS, idea and `content.js` file adapted from Chrome extension: https://github.com/iamadamdev/bypass-paywalls-chrome
+
+
+## Requirements
+Currently only built and tested for iOS 15. In theory, nothing to stop it being adapted later for iOS 14+
+
+
+## Install
+1.  Unlikely to ever be available on App Store, need to sideload yourself
+2.  Download project, open in Xcode
+3.  Connect iPhone
+4.  Run on device
+5.  Go to Settings -> Safari -> Extensions
+6.  Toggle plugin on
+7.  *Make sure to set "All Websites" permission to "Allow". Currently no permissions request dialogs implemented*
 
 ## Note
 This is an experimental project and not actively supported. Feel free to submit issues, but I can't guarantee they will be fixed or addressed. YMMV.
