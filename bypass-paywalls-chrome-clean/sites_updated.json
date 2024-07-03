@@ -1,0 +1,57 @@
+{
+  "Euractiv (en)": {
+    "domain": "euractiv.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.flip-pay\\.com",
+    "upd_version": "3.7.2.1"
+  },
+  "Financieele Dagblad (fd.nl)": {
+    "domain": "fd.nl",
+    "allow_cookies": 1,
+    "ld_archive_is": "section.upsell,div.upsell-modal-background|main",
+    "upd_version": "3.7.1.3"
+  },
+  "Malayala Manorama": {
+    "domain": "manoramaonline.com",
+    "allow_cookies": 1,
+    "block_regex": "cdn\\.ampproject\\.org\\/v\\d\\/amp-access-.+\\.js",
+    "amp_redirect": "ev-engagement",
+    "amp_unhide": 1,
+    "cs_code": "[{\"cond\":\"div[amp-access^=\\\"result='REQUIRE_\\\"]\", \"rm_elem\":1}]",
+    "upd_version": "3.7.1.1"
+  },
+  "Nikkei Asian Review": {
+    "domain": "asia.nikkei.com",
+    "remove_cookies_select_drop": ["xbc"],
+    "ld_google_webcache": "div.limit-view-overlay|div#article-body-preview",
+    "upd_version": "3.7.2.1"
+  },
+  "Puck.news": {
+    "domain": "puck.news",
+    "allow_cookies": 1,
+    "ld_archive_is": "div[class*='paywall']|article",
+    "cs_code": "[{\"cond\":\"div#paywall-modal\", \"rm_elem\":1}, {\"cond\":\"body.paywall-active\", \"rm_class\":\"paywall-active\"}]",
+    "upd_version": "3.7.2.4"
+  },
+  "Süddeutsche Zeitung": {
+    "domain": "sueddeutsche.de",
+    "allow_cookies": 1,
+    "block_regex": "\\.sueddeutsche\\.de\\/api\\/tinypass\\.min\\.js",
+    "ld_archive_is": "div#sz-paywall|div[itemprop='articleBody']",
+    "upd_version": "3.7.2.2"
+  },
+  "Telegraaf": {
+    "domain": "telegraaf.nl",
+    "allow_cookies": 1,
+    "block_regex": "\\.zephr\\.com\\/zephr\\/decision-engine",
+    "cs_dompurify": 1,
+    "upd_version": "3.7.1.6"
+  },
+  "WirtschaftsWoche": {
+    "domain": "wiwo.de",
+    "allow_cookies": 1,
+    "block_regex": "\\.wiwo\\.de\\/js\\/.+\\/wt\\..+\\.js",
+    "ld_archive_is": "div.o-paywall|article",
+    "upd_version": "3.7.3.1"
+  }
+}

@@ -1,0 +1,6 @@
+webRequestProxy/node_modules
+webRequestProxy/node_modules/
+webRequestProxy/node_modules/*
+webRequestProxy/.wrangler
+webRequestProxy/.wrangler/
+webRequestProxy/.wrangler/*

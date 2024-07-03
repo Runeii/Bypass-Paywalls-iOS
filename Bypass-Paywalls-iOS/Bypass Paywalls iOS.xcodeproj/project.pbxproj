@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4911403C2C3449B70079EE6D /* proxiedPageContentScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 4911403B2C3449B70079EE6D /* proxiedPageContentScript.js */; };
+		494DBA762C3348F00011EEF1 /* options in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA632C3348F00011EEF1 /* options */; };
+		494DBA772C3348F00011EEF1 /* updates.xml in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA642C3348F00011EEF1 /* updates.xml */; };
+		494DBA782C3348F00011EEF1 /* README.html in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA652C3348F00011EEF1 /* README.html */; };
+		494DBA792C3348F00011EEF1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA662C3348F00011EEF1 /* LICENSE */; };
+		494DBA7A2C3348F00011EEF1 /* bypass.png in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA672C3348F00011EEF1 /* bypass.png */; };
+		494DBA7B2C3348F00011EEF1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA682C3348F00011EEF1 /* README.md */; };
+		494DBA7C2C3348F00011EEF1 /* contentScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA692C3348F00011EEF1 /* contentScript.js */; };
+		494DBA7D2C3348F00011EEF1 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA6A2C3348F00011EEF1 /* background.js */; };
+		494DBA7E2C3348F00011EEF1 /* changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA6B2C3348F00011EEF1 /* changelog.txt */; };
+		494DBA7F2C3348F00011EEF1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA6C2C3348F00011EEF1 /* LICENSE.txt */; };
+		494DBA802C3348F00011EEF1 /* bypass-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA6D2C3348F00011EEF1 /* bypass-dark.png */; };
+		494DBA812C3348F00011EEF1 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA6E2C3348F00011EEF1 /* lib */; };
+		494DBA822C3348F00011EEF1 /* contentScript_once.js in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA6F2C3348F00011EEF1 /* contentScript_once.js */; };
+		494DBA832C3348F00011EEF1 /* contentScript_once_var.js in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA702C3348F00011EEF1 /* contentScript_once_var.js */; };
+		494DBA842C3348F00011EEF1 /* allowlist in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA712C3348F00011EEF1 /* allowlist */; };
+		494DBA852C3348F00011EEF1 /* custom in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA722C3348F00011EEF1 /* custom */; };
+		494DBA862C3348F00011EEF1 /* sites_updated.json in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA732C3348F00011EEF1 /* sites_updated.json */; };
+		494DBA872C3348F00011EEF1 /* sites.js in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA742C3348F00011EEF1 /* sites.js */; };
+		494DBA882C3348F00011EEF1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA752C3348F00011EEF1 /* manifest.json */; };
+		494DBA8A2C334E430011EEF1 /* webRequestShim.js in Resources */ = {isa = PBXBuildFile; fileRef = 494DBA892C334E430011EEF1 /* webRequestShim.js */; };
+		49C2197127724EA20059D268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2197027724EA20059D268 /* AppDelegate.swift */; };
+		49C2197527724EA20059D268 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 49C2197327724EA20059D268 /* Main.html */; };
+		49C2197727724EA20059D268 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C2197627724EA20059D268 /* Icon.png */; };
+		49C2197927724EA20059D268 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 49C2197827724EA20059D268 /* Style.css */; };
+		49C2197B27724EA20059D268 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2197A27724EA20059D268 /* SceneDelegate.swift */; };
+		49C2197D27724EA20059D268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2197C27724EA20059D268 /* ViewController.swift */; };
+		49C2198027724EA20059D268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C2197E27724EA20059D268 /* LaunchScreen.storyboard */; };
+		49C2198327724EA20059D268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C2198127724EA20059D268 /* Main.storyboard */; };
+		49C2198B27724EA30059D268 /* Bypass Paywalls iOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49C2198A27724EA30059D268 /* Bypass Paywalls iOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49C2199027724EA30059D268 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2198F27724EA30059D268 /* SafariWebExtensionHandler.swift */; };
+		49C219A327724EA30059D268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C2198427724EA30059D268 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49C2198C27724EA30059D268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49C2196527724EA20059D268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49C2198927724EA30059D268;
+			remoteInfo = "Bypass Paywalls iOS Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49C219A927724EA30059D268 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49C2198B27724EA30059D268 /* Bypass Paywalls iOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4911403B2C3449B70079EE6D /* proxiedPageContentScript.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = proxiedPageContentScript.js; sourceTree = "<group>"; };
+		494DBA632C3348F00011EEF1 /* options */ = {isa = PBXFileReference; lastKnownFileType = folder; name = options; path = "../../../bypass-paywalls-chrome-clean/options"; sourceTree = "<group>"; };
+		494DBA642C3348F00011EEF1 /* updates.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = updates.xml; path = "../../../bypass-paywalls-chrome-clean/updates.xml"; sourceTree = "<group>"; };
+		494DBA652C3348F00011EEF1 /* README.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = README.html; path = "../../../bypass-paywalls-chrome-clean/README.html"; sourceTree = "<group>"; };
+		494DBA662C3348F00011EEF1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "../../../bypass-paywalls-chrome-clean/LICENSE"; sourceTree = "<group>"; };
+		494DBA672C3348F00011EEF1 /* bypass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bypass.png; path = "../../../bypass-paywalls-chrome-clean/bypass.png"; sourceTree = "<group>"; };
+		494DBA682C3348F00011EEF1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../bypass-paywalls-chrome-clean/README.md"; sourceTree = "<group>"; };
+		494DBA692C3348F00011EEF1 /* contentScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = contentScript.js; path = "../../../bypass-paywalls-chrome-clean/contentScript.js"; sourceTree = "<group>"; };
+		494DBA6A2C3348F00011EEF1 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../../bypass-paywalls-chrome-clean/background.js"; sourceTree = "<group>"; };
+		494DBA6B2C3348F00011EEF1 /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = changelog.txt; path = "../../../bypass-paywalls-chrome-clean/changelog.txt"; sourceTree = "<group>"; };
+		494DBA6C2C3348F00011EEF1 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = "../../../bypass-paywalls-chrome-clean/LICENSE.txt"; sourceTree = "<group>"; };
+		494DBA6D2C3348F00011EEF1 /* bypass-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bypass-dark.png"; path = "../../../bypass-paywalls-chrome-clean/bypass-dark.png"; sourceTree = "<group>"; };
+		494DBA6E2C3348F00011EEF1 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = "../../../bypass-paywalls-chrome-clean/lib"; sourceTree = "<group>"; };
+		494DBA6F2C3348F00011EEF1 /* contentScript_once.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = contentScript_once.js; path = "../../../bypass-paywalls-chrome-clean/contentScript_once.js"; sourceTree = "<group>"; };
+		494DBA702C3348F00011EEF1 /* contentScript_once_var.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = contentScript_once_var.js; path = "../../../bypass-paywalls-chrome-clean/contentScript_once_var.js"; sourceTree = "<group>"; };
+		494DBA712C3348F00011EEF1 /* allowlist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = allowlist; path = "../../../bypass-paywalls-chrome-clean/allowlist"; sourceTree = "<group>"; };
+		494DBA722C3348F00011EEF1 /* custom */ = {isa = PBXFileReference; lastKnownFileType = folder; name = custom; path = "../../../bypass-paywalls-chrome-clean/custom"; sourceTree = "<group>"; };
+		494DBA732C3348F00011EEF1 /* sites_updated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sites_updated.json; path = "../../../bypass-paywalls-chrome-clean/sites_updated.json"; sourceTree = "<group>"; };
+		494DBA742C3348F00011EEF1 /* sites.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sites.js; path = "../../../bypass-paywalls-chrome-clean/sites.js"; sourceTree = "<group>"; };
+		494DBA752C3348F00011EEF1 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = manifest.json; path = "../../../bypass-paywalls-chrome-clean/manifest.json"; sourceTree = "<group>"; };
+		494DBA892C334E430011EEF1 /* webRequestShim.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = webRequestShim.js; sourceTree = "<group>"; };
+		49C2196D27724EA20059D268 /* Bypass Paywalls iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bypass Paywalls iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C2197027724EA20059D268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49C2197427724EA20059D268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		49C2197627724EA20059D268 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		49C2197827724EA20059D268 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		49C2197A27724EA20059D268 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49C2197C27724EA20059D268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49C2197F27724EA20059D268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49C2198227724EA20059D268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49C2198427724EA30059D268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49C2198527724EA30059D268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C2198A27724EA30059D268 /* Bypass Paywalls iOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bypass Paywalls iOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C2198F27724EA30059D268 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		49C219A227724EA30059D268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49C2196A27724EA20059D268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C2198727724EA30059D268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49C2196427724EA20059D268 = {
+			isa = PBXGroup;
+			children = (
+				49C2196F27724EA20059D268 /* Bypass Paywalls iOS */,
+				49C2198E27724EA30059D268 /* Bypass Paywalls iOS Extension */,
+				49C2196E27724EA20059D268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49C2196E27724EA20059D268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49C2196D27724EA20059D268 /* Bypass Paywalls iOS.app */,
+				49C2198A27724EA30059D268 /* Bypass Paywalls iOS Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49C2196F27724EA20059D268 /* Bypass Paywalls iOS */ = {
+			isa = PBXGroup;
+			children = (
+				49C2197027724EA20059D268 /* AppDelegate.swift */,
+				49C2197A27724EA20059D268 /* SceneDelegate.swift */,
+				49C2197C27724EA20059D268 /* ViewController.swift */,
+				49C2197E27724EA20059D268 /* LaunchScreen.storyboard */,
+				49C2198127724EA20059D268 /* Main.storyboard */,
+				49C2198427724EA30059D268 /* Assets.xcassets */,
+				49C2198527724EA30059D268 /* Info.plist */,
+				49C2197227724EA20059D268 /* Resources */,
+			);
+			path = "Bypass Paywalls iOS";
+			sourceTree = "<group>";
+		};
+		49C2197227724EA20059D268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49C2197327724EA20059D268 /* Main.html */,
+				49C2197627724EA20059D268 /* Icon.png */,
+				49C2197827724EA20059D268 /* Style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49C2198E27724EA30059D268 /* Bypass Paywalls iOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49C2198F27724EA30059D268 /* SafariWebExtensionHandler.swift */,
+				49C219A227724EA30059D268 /* Info.plist */,
+				49C2199127724EA30059D268 /* Resources */,
+			);
+			path = "Bypass Paywalls iOS Extension";
+			sourceTree = "<group>";
+		};
+		49C2199127724EA30059D268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				494DBA712C3348F00011EEF1 /* allowlist */,
+				494DBA6A2C3348F00011EEF1 /* background.js */,
+				494DBA6D2C3348F00011EEF1 /* bypass-dark.png */,
+				494DBA672C3348F00011EEF1 /* bypass.png */,
+				494DBA6B2C3348F00011EEF1 /* changelog.txt */,
+				494DBA702C3348F00011EEF1 /* contentScript_once_var.js */,
+				494DBA6F2C3348F00011EEF1 /* contentScript_once.js */,
+				494DBA692C3348F00011EEF1 /* contentScript.js */,
+				494DBA722C3348F00011EEF1 /* custom */,
+				494DBA6E2C3348F00011EEF1 /* lib */,
+				494DBA662C3348F00011EEF1 /* LICENSE */,
+				494DBA6C2C3348F00011EEF1 /* LICENSE.txt */,
+				494DBA752C3348F00011EEF1 /* manifest.json */,
+				494DBA632C3348F00011EEF1 /* options */,
+				494DBA652C3348F00011EEF1 /* README.html */,
+				494DBA682C3348F00011EEF1 /* README.md */,
+				494DBA732C3348F00011EEF1 /* sites_updated.json */,
+				494DBA742C3348F00011EEF1 /* sites.js */,
+				494DBA642C3348F00011EEF1 /* updates.xml */,
+				494DBA892C334E430011EEF1 /* webRequestShim.js */,
+				4911403B2C3449B70079EE6D /* proxiedPageContentScript.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49C2196C27724EA20059D268 /* Bypass Paywalls iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C219AA27724EA30059D268 /* Build configuration list for PBXNativeTarget "Bypass Paywalls iOS" */;
+			buildPhases = (
+				49C2196927724EA20059D268 /* Sources */,
+				49C2196A27724EA20059D268 /* Frameworks */,
+				49C2196B27724EA20059D268 /* Resources */,
+				49C219A927724EA30059D268 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49C2198D27724EA30059D268 /* PBXTargetDependency */,
+			);
+			name = "Bypass Paywalls iOS";
+			productName = "Bypass Paywalls iOS";
+			productReference = 49C2196D27724EA20059D268 /* Bypass Paywalls iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49C2198927724EA30059D268 /* Bypass Paywalls iOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C219A627724EA30059D268 /* Build configuration list for PBXNativeTarget "Bypass Paywalls iOS Extension" */;
+			buildPhases = (
+				49C2198627724EA30059D268 /* Sources */,
+				49C2198727724EA30059D268 /* Frameworks */,
+				49C2198827724EA30059D268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bypass Paywalls iOS Extension";
+			productName = "Bypass Paywalls iOS Extension";
+			productReference = 49C2198A27724EA30059D268 /* Bypass Paywalls iOS Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49C2196527724EA20059D268 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					49C2196C27724EA20059D268 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					49C2198927724EA30059D268 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 49C2196827724EA20059D268 /* Build configuration list for PBXProject "Bypass Paywalls iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49C2196427724EA20059D268;
+			productRefGroup = 49C2196E27724EA20059D268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49C2196C27724EA20059D268 /* Bypass Paywalls iOS */,
+				49C2198927724EA30059D268 /* Bypass Paywalls iOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49C2196B27724EA20059D268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C2197727724EA20059D268 /* Icon.png in Resources */,
+				49C2198327724EA20059D268 /* Main.storyboard in Resources */,
+				49C2198027724EA20059D268 /* LaunchScreen.storyboard in Resources */,
+				49C2197527724EA20059D268 /* Main.html in Resources */,
+				49C219A327724EA30059D268 /* Assets.xcassets in Resources */,
+				49C2197927724EA20059D268 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C2198827724EA30059D268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494DBA832C3348F00011EEF1 /* contentScript_once_var.js in Resources */,
+				494DBA852C3348F00011EEF1 /* custom in Resources */,
+				494DBA7D2C3348F00011EEF1 /* background.js in Resources */,
+				494DBA842C3348F00011EEF1 /* allowlist in Resources */,
+				494DBA7B2C3348F00011EEF1 /* README.md in Resources */,
+				4911403C2C3449B70079EE6D /* proxiedPageContentScript.js in Resources */,
+				494DBA772C3348F00011EEF1 /* updates.xml in Resources */,
+				494DBA882C3348F00011EEF1 /* manifest.json in Resources */,
+				494DBA7C2C3348F00011EEF1 /* contentScript.js in Resources */,
+				494DBA872C3348F00011EEF1 /* sites.js in Resources */,
+				494DBA7A2C3348F00011EEF1 /* bypass.png in Resources */,
+				494DBA822C3348F00011EEF1 /* contentScript_once.js in Resources */,
+				494DBA782C3348F00011EEF1 /* README.html in Resources */,
+				494DBA8A2C334E430011EEF1 /* webRequestShim.js in Resources */,
+				494DBA812C3348F00011EEF1 /* lib in Resources */,
+				494DBA802C3348F00011EEF1 /* bypass-dark.png in Resources */,
+				494DBA7E2C3348F00011EEF1 /* changelog.txt in Resources */,
+				494DBA792C3348F00011EEF1 /* LICENSE in Resources */,
+				494DBA862C3348F00011EEF1 /* sites_updated.json in Resources */,
+				494DBA7F2C3348F00011EEF1 /* LICENSE.txt in Resources */,
+				494DBA762C3348F00011EEF1 /* options in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49C2196927724EA20059D268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C2197D27724EA20059D268 /* ViewController.swift in Sources */,
+				49C2197127724EA20059D268 /* AppDelegate.swift in Sources */,
+				49C2197B27724EA20059D268 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C2198627724EA30059D268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C2199027724EA30059D268 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49C2198D27724EA30059D268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49C2198927724EA30059D268 /* Bypass Paywalls iOS Extension */;
+			targetProxy = 49C2198C27724EA30059D268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49C2197327724EA20059D268 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C2197427724EA20059D268 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		49C2197E27724EA20059D268 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C2197F27724EA20059D268 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		49C2198127724EA20059D268 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C2198227724EA20059D268 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49C219A427724EA30059D268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49C219A527724EA30059D268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49C219A727724EA30059D268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XT5PQQV954;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bypass Paywalls iOS Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bypass Paywalls iOS Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kepler.Bypass-Paywalls-iOS.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49C219A827724EA30059D268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XT5PQQV954;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bypass Paywalls iOS Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bypass Paywalls iOS Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kepler.Bypass-Paywalls-iOS.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49C219AB27724EA30059D268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XT5PQQV954;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bypass Paywalls iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bypass Paywalls iOS";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kepler.Bypass-Paywalls-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49C219AC27724EA30059D268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XT5PQQV954;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bypass Paywalls iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bypass Paywalls iOS";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kepler.Bypass-Paywalls-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49C2196827724EA20059D268 /* Build configuration list for PBXProject "Bypass Paywalls iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C219A427724EA30059D268 /* Debug */,
+				49C219A527724EA30059D268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C219A627724EA30059D268 /* Build configuration list for PBXNativeTarget "Bypass Paywalls iOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C219A727724EA30059D268 /* Debug */,
+				49C219A827724EA30059D268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C219AA27724EA30059D268 /* Build configuration list for PBXNativeTarget "Bypass Paywalls iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C219AB27724EA30059D268 /* Debug */,
+				49C219AC27724EA30059D268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49C2196527724EA20059D268 /* Project object */;
+}
